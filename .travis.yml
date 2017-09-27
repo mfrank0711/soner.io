@@ -4,4 +4,4 @@ python:
   - 3.6
 
 script:
-  - merge.py
+  - scripts/merge.py
