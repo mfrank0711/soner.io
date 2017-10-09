@@ -8,30 +8,30 @@ with open("main.html", "rt") as fin:
         for line in fin:
             fout.write(line);
             if ('<div id="aws_mysql">' in line):
-                insertContent("aws_mysql.html")
+                insertContent("content/aws_mysql.html")
             
             elif ('<div id="aws_mssql">' in line):
-                insertContent("aws_mssql.html")
+                insertContent("content/aws_mssql.html")
                         
             elif ('<div id="aws_nosql">' in line):
-                insertContent("aws_nosql.html")
+                insertContent("content/aws_nosql.html")
                 
             elif ('<div id="aws_datawarehouse">' in line):
-                insertContent("aws_datawarehouse.html")
+                insertContent("content/aws_datawarehouse.html")
                 
             elif ('<div id="aws_elasticache">' in line):
-                insertContent("aws_elasticache.html")
+                insertContent("content/aws_elasticache.html")
                 
                 
             elif ('<div id="ms_mysql">' in line):
-                insertContent("ms_mysql.html")
+                insertContent("content/ms_mysql.html")
                 
             elif ('<div id="ms_nosql">' in line):
-                insertContent("ms_nosql.html")
+                insertContent("content/ms_nosql.html")
                 
                 
             elif ('<div id="gcp_mysql">' in line):
-                insertContent("gcp_mysql.html")
+                insertContent("content/gcp_mysql.html")
                 
             elif ('<div id="gcp_nosql">' in line):
-                insertContent("gcp_nosql.html")
+                insertContent("content/gcp_nosql.html")
