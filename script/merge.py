@@ -3,6 +3,10 @@ def insertContent(htmlFile):
         for content in newLine:
             fout.write(content)
 
+import os 
+
+print(os.getcwd())
+
 with open("main.html", "rt") as fin:
     with open("index.html", "wt") as fout:
         for line in fin:
