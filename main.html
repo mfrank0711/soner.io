@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <title>soner.io - DBaaS Overview</title>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+
+<body>
+  <div class="navbar-fixed">
+    <nav class="blue-grey">
+      <div class="nav-wrapper">
+        &nbsp;soner.io
+        <ul class="right hide-on-med-and-down">
+          <li><a>contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="card-content center" style="padding-top:30px;">
+      <p>Hi! Do you need help to find the right database solution for you project or work?<br>No problem, ask soner.io!</p>
+    </div>
+    <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab"><a class="active" href="#Card1">Full Managed (PaaS)</a></li>
+        <li class="tab"><a href="#Card2">Full Access (IaaS)</a></li>
+      </ul>
+    </div>
+    <div class="chips"></div>
+  </div>
+  <div class="row">
+    <div class="grey lighten-5" style="padding:10px; margin:5px;">
+      <div class="card-content">
+        <div id="Card1">
+          <div class="row">
+            <div class="col s4">
+              <h4 class="header">Amazon Web Services</h4>
+              <div id="aws_mysql">
+              </div>
+              
+              <div id="aws_mssql">
+              </div>
+              
+              <div id="aws_nosql">
+              </div>
+              
+              <div id="aws_datawarehouse">
+              </div>
+              
+              <div id="aws_elasticache">
+              </div>
+              
+            </div>
+
+            <div class="col s4">
+              <h4 class="header">Microsoft Azure</h4>
+              
+              <div id="ms_mysql">
+              </div>
+              
+              <div id="ms_nosql">
+              </div>
+            </div>
+
+
+
+            <div class="col s4">
+              <h4 class="header">Google Cloud Platform</h4>
+              
+              <div id="gcp_mysql">
+              </div>
+
+              <div id="gcp_nosql">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Card2">
+          <div class="row">
+            <div class="col s4">
+              <h4 class="header">Amazon Web Services</h4>
+              <div class="card mssql hoverable">
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">EC2 with SQL<i class="material-icons right">more_vert</i></span>
+                  <h6><b>Offering</b></h6>
+                  sql server running on ec2 instances
+                  <h6><b>Features</b></h6>
+                  <li>up to a maximum of 128 vCPUs and 1952 GiB of RAM</li>
+                  <li>EBS Storage up to 16TB per Volume</li>
+                  <b>Regions</b></h6>
+                  <li>all AWS Regions</li>
+                  <h6><b>Backup & Recovery</b></h6>
+                  <li>manual, backup, recovery, replication is up to you</li>
+                  <h6><b>Licensing / Editions</b></h6>
+                  <li>Windows only per default</li>
+                  <li>SQL Server Express (2008, 2008R2, 2012, 2014, and 2016)</li>
+                  <li>SQL Server Standard (2008, 2008R2, 2012, 2014, and 2016)</li>
+                  <li>SQL Server Web (2008R2, 2012, 2014, and 2016)</li>
+                  <li>SQL Server Enterprise (2012, 2014 and 2016)</li>
+                  <li>EC2 Instances are available preloaded with Microsoft SQL Server</li>
+                  <li>BYOL possible</li>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">EC2 with SQL - Overview<i class="material-icons right">close</i></span>
+                  <p>Using SQL Server on Amazon EC2 gives you complete control over every setting, just like when it’s installed
+                    on-premises. Amazon RDS is a fully managed service that takes care of all the maintenance, backups, and
+                    patching for you. To see what versions and editions are available, read below for EC2 and go here for
+                    RDS. Both EC2 and RDS have ways to bring your own license.</p>
+                  <p><a href="https://aws.amazon.com/windows/products/sql/">Jump in..</a>
+                </div>
+                <div class="card-action">
+                  <a class="blue-grey-text" href="https://aws.amazon.com/windows/products/sql/">Lern more</a>
+                  <a class="blue-grey-text" href="">Features</a>
+                  <a class="blue-grey-text" href="https://aws.amazon.com/ec2/pricing/">Pricing</a>
+                </div>
+              </div>
+            </div>
+            <div class="col s4">
+              <h4 class="header">Microsoft Azure</h4>
+              <div class="card mssql hoverable">
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">SQL Server on virtual Machines<i class="material-icons right">more_vert</i></span>
+                  <h6><b>Offering</b></h6>
+                  sql server running on virtual machines
+                  <h6><b>Features</b></h6>
+                  <li>up to a maximum of 64 vCPUs and 448 GiB of RAM</li>
+                  <li>a maximum of 64 TB Volume, unlimited databases</li>
+                  <li></li>
+                  <b>Regions</b></h6>
+                  <li>all Azure Regions</li>
+                  <h6><b>Backup & Recovery</b></h6>
+                  <li>manual, backup, recovery, replication is up to you</li>
+                  <h6><b>Licensing / Editions</b></h6>
+                  <li>Windows and Linux (SQL Server 2016/17 for Linux)</li>
+                  <li>SQL Server Express (2012, 2014, 2016)</li>
+                  <li>SQL Server Developer (2016)</li>
+                  <li>SQL Server Standard (2012, 2014, 2016)</li>
+                  <li>SQL Server Web (2012, 2014, 2016)</li>
+                  <li>SQL Server Enterprise (2012, 2014, 2016)</li>
+                  <li>SQL Server Enterprise (2012, 2014, 2016)</li>
+                  <li>Compute Engine VMs are available preloaded with Microsoft SQL Server</li>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">SQL Server on virtual Machines - Overview<i class="material-icons right">close</i></span>
+                  <p>SQL Database is a cloud database service built for application developers that lets you scale on-the-fly
+                    without downtime and efficiently deliver your applications. Built-in advisors quickly learn your application's
+                    unique characteristics and dynamically adapt to maximize performance, reliability, and data protection.</p>
+                  <img src="https://azurecomcdn.azureedge.net/cvt-436dfecd75d9360bd582e3dc5e37e7c55c947b1d0fd71405ff126484b77db4af/images/page/services/virtual-machines/sql-server/sql-server-seamless.png">
+                  <p><a href="https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/">Jump in..</a></p>
+                </div>
+                <div class="card-action">
+                  <a class="blue-grey-text" href="https://aws.amazon.com/windows/products/sql/">Lern more</a>
+                  <a class="blue-grey-text" href="">Features</a>
+                  <a class="blue-grey-text" href="https://aws.amazon.com/ec2/pricing/">Pricing</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s4">
+              <h4 class="header">Google Cloud Platform</h4>
+              <div class="card mssql hoverable">
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">SQL Server<i class="material-icons right">more_vert</i></span>
+                  <h6><b>Offering</b></h6>
+                  Flexible, scalable, and high-performance SQL Server virtual machines
+                  <h6><b>Features</b></h6>
+                  <li>up to a maximum of 64 vCPUs and 416 GiB of RAM (custom VM´s possible)</li>
+
+                  <b>Regions</b></h6>
+                  <li>all GCP Regions</li>
+                  <h6><b>Backup & Recovery</b></h6>
+                  <li>manual, backup, recovery, replication is up to you</li>
+                  <h6><b>Licensing / Editions</b></h6>
+                  <li>Windows only per default</li>
+                  <li>SQL Server Standard (2012, 2014, 2016)</li>
+                  <li>SQL Server Web (2012, 2014, 2016)</li>
+                  <li>SQL Server Enterprise (2012, 2014, 2016)</li>
+                  <li>Compute Engine VMs are available preloaded with Microsoft SQL Server</li>
+                  <li>BYOL possible</li>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">SQL Server - Overview<i class="material-icons right">close</i></span>
+                  <p>Our top enterprise customers are often surprised to learn that Google’s underlying infrastructure makes
+                    it a great place to run existing enterprise workloads. Windows is no exception: learn why SQL Server
+                    images powered by Google Compute Engine gives enterprises the continuity needed now as they gear up to
+                    build what’s next.</p>
+                  <img src="https://cloud.google.com/images/sql-server/lead-graphic.png"></img>
+                  <p><a href="https://cloud.google.com/sql-server/">Jump in..</a></p>
+                </div>
+                <div class="card-action">
+                  <a class="blue-grey-text" href="https://aws.amazon.com/windows/products/sql/">Lern more</a>
+                  <a class="blue-grey-text" href="">Features</a>
+                  <a class="blue-grey-text" href="https://aws.amazon.com/ec2/pricing/">Pricing</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer blue-grey">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">soner.io</h5>
+          <p class="grey-text text-lighten-4">
+            why: because we love this shit<br> made with: Google Cloud Services, materializecss, jquery, github<br> sources:
+            aws.amazon.com, cloud.google.com, azure.com
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <ul>
+            <li><a class="twitter-follow-button" href="https://twitter.com/mfrank0711" data-size="large">Follow @mfrank0711</a></li>
+            <li><a class="twitter-follow-button" href="https://twitter.com/mfrank0711" data-size="large">Follow @soner</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 - today
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

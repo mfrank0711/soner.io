@@ -1,0 +1,12 @@
+language: python
+python:
+  - 3.6
+script:
+  - python script/merge.py
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master

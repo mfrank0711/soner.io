@@ -1,0 +1,56 @@
+.vertical-space-huge {
+  margin-top: 60px;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  color: #0b4d64;
+}
+
+.footer {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px;
+  /* Vertically center the text there */
+}
+
+.container-footer {
+  max-width: 680px;
+  padding: 0 15px;
+}
+
+.slider-selection.tick-slider-selection {
+  background-image: linear-gradient(to bottom, #0b4d64 0, #0b4d64 100%);
+}
+
+.slider-track {
+  background-image: linear-gradient(to bottom, #0b4d64 0, #0b4d64 100%);
+}
+
+.slider-tick.in-selection {
+  background-image: linear-gradient(to bottom, #0b4d64 0, #0b4d64 100%);
+}
+
+.slider-tick {
+  background-image: linear-gradient(to bottom, #0b4d64 0, #0b4d64 100%);
+  opacity: 1;
+}
+
+.slider-handle {
+  background-image: linear-gradient(to bottom, #c6d32e 0, #c6d32e 100%)
+}
+
+.navbar-brand {
+  float: none;
+}
+
+.navbar-header {
+  float: left;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}

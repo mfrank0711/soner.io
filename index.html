@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <title>soner.io - DBaaS Overview</title>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/bootstrap-slider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.1/css/bootstrap-slider.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+
+<body>
+  <div class="navbar-fixed">
+    <nav class="blue-grey">
+      <div class="nav-wrapper">
+        &nbsp;soner.io
+        <ul class="right hide-on-med-and-down">
+          <li><a>contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="card-content center" style="padding-top:30px;">
+      <p>Hi! Do you need help to find the right database solution for you project or work?<br>No problem, ask soner.io!</p>
+    </div>
+    <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab"><a class="active" href="#Card1">Full Managed (PaaS)</a></li>
+        <li class="tab"><a href="#Card2">Full Access (IaaS)</a></li>
+      </ul>
+    </div>
+    <div class="chips"></div>
+  </div>
+  <div class="row">
+    <div class="grey lighten-5" style="padding:10px; margin:5px;">
+      <div class="card-content">
+        <div id="Card1">
+          <div class="row">
+            <div class="col s4">
+              <h4 class="header">Amazon Web Services</h4>
+              <div id="aws_mysql">
+                <div class="mysql card hoverable horizontal mysql">
+                  <div class="blue-grey darken-1 white-text center-align" style="writing-mode:vertical-rl;transform: rotate(180deg);">
+                    mysql / postgres
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-tabs">
+                      <ul class="tabs tabs-fixed-width">
+                        <li class="tab"><a class="active blue-grey-text" href="#Aurora">Aurora</a></li>
+                        <li class="tab blue-grey-text"><a class="blue-grey-text" href="#RDS">RDS mysql / postgresql</a></li>
+                      </ul>
+                    </div>
+                    <div class="card-content">
+                      <div id="Aurora">
+                        <h5>Amazon Aurora</h5>
+                        <h6><b>Offering</b></h6>
+                        MySQL- and PostgreSQL-compatible enterprise-class database, <br>starting at
+                        <$1/day. <h6><b>Features</b></h6>
+                          <li>Up to 5 times the throughput of MySQL and 3 times the throughput of PostgreSQL</li>
+                          <li>Up to 64TB of auto-scaling SSD storage</li>
+                          <li>6-way replication across three Availability Zones</li>
+                          <li>Up to 15 Read Replicas with sub-10ms replica lag</li>
+                          <li>Automatic monitoring and failover in less than 30 seconds</li>
+                          <b>Regions</b></h6>
+                          <li>all AWS Regions</li>
+                          <h6><b>Backup & Recovery</b></h6>
+                          <li>Automatic, Continuous, Incremental Backups and Point-in-time Restore</li>
+                          <h6><b>Engines</b></h6>
+                          <li>mysql: compatible with MySQL 5.6.10a</li>
+                          <li>postgresql: compatible with PostgreSQL 9.6.2</li>
+                        <div class="card-action">
+                          <a class="blue-grey-text" href="https://aws.amazon.com/rds/aurora/">Lern more</a>
+                          <a class="blue-grey-text" href="https://aws.amazon.com/rds/aurora/details/?nc1=h_ls">Features</a>
+                          <a class="blue-grey-text" href="https://aws.amazon.com/rds/aurora/pricing/">Pricing</a>
+                        </div>
+                      </div>
+                      <div id="RDS">
+                        <h5>RDS myqsl / postgresql</h5>
+                        <h6><b>Offering</b></h6>
+                        automated mysql & postgres deployment
+                        <h6><b>Features</b></h6>
+                        <li>Instances offer up to 32 vCPUs and 244 GiB Memory</li>
+                        <li>Supports database size up to 6 TB</li>
+                        <li>Supports cross-region read replicas</li>
+                        <li>Multi-AZ & PIOPS for productive enviroments</li>
+                        <b>Regions</b></h6>
+                        <li>all AWS Regions</li>
+                        <h6><b>Backup & Recovery</b></h6>
+                        <li>Automatic, Continuous, Incremental Backups and Point-in-time Restore</li>
+                        <h6><b>Engines</b></h6>
+                        <li>mysql 5.5.46 - 5.7.17</li>
+                        <li>postgresql 9.3.12 R1 - 9.6.3 R1</li>
+                        <li>BYOL not possible</li>
+                        <h6><b>Hints</b></h6>
+                        <li>Reserved Instances available (cost reduction)</li>
+                        <li>start / stop of RDS mysql possible (restart after 7 days)</li>
+                        <div class="card-action">
+                          <a class="blue-grey-text" href="https://aws.amazon.com/rds/mysql/?nc1=f_ls">Lern more</a>
+                          <a class="blue-grey-text" href="https://aws.amazon.com/rds/mysql/details/">Features</a>
+                          <a class="blue-grey-text" href="https://aws.amazon.com/rds/mysql/pricing/">Pricing</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div id="aws_mssql">
+                <div class="mssql card hoverable horizontal hide">
+                  <div class="purple darken-4 white-text center-align" style="writing-mode:vertical-rl;transform: rotate(180deg);">
+                    ms sql
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content grey-text">
+                      no offers here
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div id="aws_nosql">
+                <div class="nosql card hoverable horizontal">
+                  <div class="red darken-4 white-text center-align" style="writing-mode:vertical-rl;transform: rotate(180deg);">
+                    nosql
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h5>Amazon DynamoDB</h5>
+                      <h6><b>Offering</b></h6>
+                      highly-scalable NoSQL database
+                      <h6><b>Features</b></h6>
+                      <li>up to a maximum of 32 vCPUs and 244 GiB of RAM</li>
+                      <li>10 GB up to a maximum of 64 TB Volume growing</li>
+                      <li>Low Latency Read Replicas, up to 15 in three AZ</li>
+                      <b>Available</b></h6>
+                      <li></li>
+                      <h6><b>Backup & Recovery</b></h6>
+                      <li>Automatic, Continuous, Incremental Backups and Point-in-time Restore</li>
+                      <h6><b>Security</b></h6>
+                      <li></li>
+                      <li></li>
+                    </div>
+                    <div class="card-action">
+                      <a class="red-text" href="#">Lern more</a>
+                      <a class="red-text" href="#">Features</a>
+                      <a class="red-text" href="#">Pricing</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div id="aws_datawarehouse">
+                <div class="datawarehouse card hoverable horizontal hide">
+                  <div class="indigo darken-4 white-text center-align" style="writing-mode:vertical-rl;transform: rotate(180deg);">
+                    datawarehouse
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h5>Amazon RedShift</h5>
+                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I
+                        require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">Lern more</a>
+                      <a href="#">Features</a>
+                      <a href="#">Pricing</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div id="aws_elasticache">
+                <div class="elasticache card hoverable horizontal hide">
+                  <div class="teal darken-4 white-text center-align" style="writing-mode:vertical-rl;transform: rotate(180deg);">
+                    in memory cache
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h5>Amazon ElastiCache</h5>
+                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I
+                        require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">Lern more</a>
+                      <a href="#">Features</a>
+                      <a href="#">Pricing</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="col s4">
+              <h4 class="header">Microsoft Azure</h4>
+              
+              <div id="ms_mysql">
+                <div class="mysql card hoverable horizontal">
+                  <div class="blue-grey darken-1 white-text center-align">
+                    &nbsp;
+                  </div>
+                  <div class="card-stacked">
+                      <div class="card-tabs">
+                        <ul class="tabs tabs-fixed-width">
+                          <li class="tab"><a class="active blue-grey-text" href="#SubCard3">Azure Database (prev)</a></li>
+                          <li class="tab blue-grey-text"><a class="blue-grey-text" href="#SubCard4">mysql / postgresql database</a></li>
+                        </ul>
+                      </div>
+                      <div class="card-content">
+                        <div id="SubCard3">
+                          <h5>Azure Database for MySQL/PostGreSQL (preview)</h5>
+                          <h6><b>Offering</b></h6>
+                          mysql and postgres databases (both currently preview)
+                          <h6><b>Features</b></h6>
+                          <li>up to 100 <a href="https://docs.microsoft.com/en-gb/azure/mysql/concepts-compute-unit-and-storage" target="_blank">Compute Units</a> (Basic Tier)</li>
+                          <li>Up to 1050 GB, can be increased by 125 GB </li>
+                          <li>Low Latency Read Replicas, up to 15 in three AZ</li>
+                          <h6><b>Available</b></h6>
+                          <li></li>
+                          <h6><b>Backup & Recovery</b></h6>
+                          <li>no integrated service for backup and recovery at the moment</li>
+                          <h6><b>Engines</b></h6>
+                          <li>mysql 5.6.35 & 5.7.17</li>
+                          <li>postgresql 9.5 - 9.6</li>
+                          <h6><b>Hints</b></h6>
+                          <li>BYOL not possible</li>
+                          <li>manages patching for minor version updates, major updates not possible</li>
+                          <div class="card-action">
+                            <a class="blue-grey-text" href="https://azure.microsoft.com/en-gb/services/mysql/">Lern more</a>
+                            <a class="blue-grey-text" href="https://docs.microsoft.com/en-gb/azure/mysql/overview">Features</a>
+                            <a class="blue-grey-text" href="https://azure.microsoft.com/en-gb/pricing/details/mysql/">Pricing</a>
+                          </div>
+                        </div>
+
+                        <div id="SubCard4">
+                            <h5>MySQL / PostGreSQL Database</h5>
+                            <h6><b>Offering</b></h6>
+                            mysql and postgres databases (both currently preview)
+                            <h6><b>Features</b></h6>
+                            <li>up to 100 <a href="https://docs.microsoft.com/en-gb/azure/mysql/concepts-compute-unit-and-storage" target="_blank">Compute Units</a> (Basic Tier)</li>
+                            <li>Up to 1050 GB, can be increased by 125 GB </li>
+                            <li>Low Latency Read Replicas, up to 15 in three AZ</li>
+                            <h6><b>Available</b></h6>
+                            <li></li>
+                            <h6><b>Backup & Recovery</b></h6>
+                            <li>no integrated service for backup and recovery at the moment</li>
+                            <h6><b>Engines</b></h6>
+                            <li>mysql 5.6.35 & 5.7.17</li>
+                            <li>postgresql 9.5 - 9.6</li>
+                            <li></li>
+                            <li></li>
+                            <h6><b>Hints</b></h6>
+                            <li>not from Microsoft directly, via intigrated Marketplace (ClearDB)</li>
+                            <li>BYOL not possible</li>
+                            <li>shared and dedicated database types possible</li>
+                            <div class="card-action">
+                              <a class="blue-grey-text" href="https://azure.microsoft.com/en-gb/services/mysql/">Lern more</a>
+                              <a class="blue-grey-text" href="https://docs.microsoft.com/en-gb/azure/mysql/overview">Features</a>
+                              <a class="blue-grey-text" href="https://azure.microsoft.com/en-gb/pricing/details/mysql/">Pricing</a>
+                            </div>
+                        </div>
+                      </div> 
+                  </div>
+                </div>
+              </div>
+              
+              <div id="ms_nosql">
+                <div class="nosql card hoverable horizontal">
+                  <div class="red darken-4 white-text center-align">
+                    &nbsp;
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h5>Azure Cosmos DB</h5>
+                      <h6><b>Offering</b></h6>
+                      globally distributed, multi-model database
+                      <h6><b>Features</b></h6>
+                      <li>up to a maximum of 32 vCPUs and 244 GiB of RAM</li>
+                      <li>10 GB up to a maximum of 64 TB Volume growing</li>
+                      <li>Low Latency Read Replicas, up to 15 in three AZ</li>
+                      <b>data model</b></h6>
+                      <li>DocumentDB API</li>
+                      <li>MongoDB API</li>
+                      <li>Table API</li>
+                      <li>Graph (Gremlin) API</li>
+                      <li>Additional data models coming soon</li>
+                      <b>Available</b></h6>
+                      <li>any Azure Region</li>
+                      <h6><b>Backup & Recovery</b></h6>
+                      <li>Automatic, Continuous, Incremental Backups and Point-in-time Restore</li>
+                      <h6><b>Security</b></h6>
+                      <li></li>
+                      <li></li>
+                    </div>
+                    <div class="card-action">
+                      <a class="red-text" href="#">Lern more</a>
+                      <a class="red-text" href="#">Features</a>
+                      <a class="red-text" href="#">Pricing</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col s4">
+              <h4 class="header">Google Cloud Platform</h4>
+              
+              <div id="gcp_mysql">
+                <div class="mysql card hoverable horizontal">
+                  <div class="blue-grey darken-1 white-text center-align">
+                    &nbsp;
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h5>Cloud SQL</h5>
+                      <h6><b>Offering</b></h6>
+                      mysql and postgres (beta) databases
+                      <h6><b>Features</b></h6>
+                      <li>scale up to 32 processor cores and more than 200GB of RAM</li>
+                      <li>10GB up to 10TB Storage (automatic increase possible)</li>
+                      <li>Languages: Java, Python, PHP, Node.js, Go, and Ruby</li>
+                      <h6><b>Available</b></h6>
+                      <li>US, EU, or Asia</li>
+                      <h6><b>Backup & Recovery</b></h6>
+                      <li>Automated and on-demand backups, and point-in-time recovery</li>
+                      <h6><b>Engines</b></h6>
+                      <li>mysql: Second Generation instances support MySQL 5.6 and 5.7</li>
+                      <li>mysql: First Generation instances support MySQL 5.5 and 5.6</li>
+                      <li>postgresql: Cloud SQL supports PostgreSQL 9.6</li>
+                      <h6><b>Hints</b></h6>
+                      <li>database tables, temporary files and backups are encrypted</li>
+                      <li>Support for secure external connections</li>
+                      <li>PostgreSQL instances do not yet support replication</li>
+                      <li>The HA configuration is not yet available for PostgreSQL instances</li>
+                    </div>
+
+                    <div class="card-action">
+                      <a class="blue-grey-text" href="https://cloud.google.com/sql/">Lern more</a>
+                      <a class="blue-grey-text" href="https://cloud.google.com/sql/docs/mysql/features">Features</a>
+                      <a class="blue-grey-text" href="https://cloud.google.com/sql/docs/mysql/pricing">Pricing</a>
+                      <a class="blue-grey-text" href="https://cloud.google.com/sql/docs/mysql/faq">FAQ</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="gcp_nosql">
+                <div class="nosql card hoverable horizontal">
+                  <div class="red darken-4 white-text center-align">
+                    &nbsp;
+                  </div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h5>Cloud Datastore</h5>
+                      <h6><b>Offering</b></h6>
+                      highly-scalable NoSQL database
+                      <h6><b>Features</b></h6>
+                      <li>automatically handles sharding and replication</li>
+                      <li>RESTful interface</li>
+                      <li>scales seamlessly and automatically</li>
+                      <b>Available</b></h6>
+                      <li>globally</li>
+                      <h6><b>Backup & Recovery</b></h6>
+                      <li>Automatic, Continuous, Incremental Backups and Point-in-time Restore</li>
+                      <h6><b>Security</b></h6>
+                      <li></li>
+                      <li></li>
+                    </div>
+                    <div class="card-action">
+                      <a class="red-text" href="#">Lern more</a>
+                      <a class="red-text" href="#">Features</a>
+                      <a class="red-text" href="#">Pricing</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="Card2">
+          <div class="row">
+            <div class="col s4">
+              <h4 class="header">Amazon Web Services</h4>
+              <div class="card mssql hoverable">
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">EC2 with SQL<i class="material-icons right">more_vert</i></span>
+                  <h6><b>Offering</b></h6>
+                  sql server running on ec2 instances
+                  <h6><b>Features</b></h6>
+                  <li>up to a maximum of 128 vCPUs and 1952 GiB of RAM</li>
+                  <li>EBS Storage up to 16TB per Volume</li>
+                  <b>Regions</b></h6>
+                  <li>all AWS Regions</li>
+                  <h6><b>Backup & Recovery</b></h6>
+                  <li>manual, backup, recovery, replication is up to you</li>
+                  <h6><b>Licensing / Editions</b></h6>
+                  <li>Windows only per default</li>
+                  <li>SQL Server Express (2008, 2008R2, 2012, 2014, and 2016)</li>
+                  <li>SQL Server Standard (2008, 2008R2, 2012, 2014, and 2016)</li>
+                  <li>SQL Server Web (2008R2, 2012, 2014, and 2016)</li>
+                  <li>SQL Server Enterprise (2012, 2014 and 2016)</li>
+                  <li>EC2 Instances are available preloaded with Microsoft SQL Server</li>
+                  <li>BYOL possible</li>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">EC2 with SQL - Overview<i class="material-icons right">close</i></span>
+                  <p>Using SQL Server on Amazon EC2 gives you complete control over every setting, just like when it’s installed
+                    on-premises. Amazon RDS is a fully managed service that takes care of all the maintenance, backups, and
+                    patching for you. To see what versions and editions are available, read below for EC2 and go here for
+                    RDS. Both EC2 and RDS have ways to bring your own license.</p>
+                  <p><a href="https://aws.amazon.com/windows/products/sql/">Jump in..</a>
+                </div>
+                <div class="card-action">
+                  <a class="blue-grey-text" href="https://aws.amazon.com/windows/products/sql/">Lern more</a>
+                  <a class="blue-grey-text" href="">Features</a>
+                  <a class="blue-grey-text" href="https://aws.amazon.com/ec2/pricing/">Pricing</a>
+                </div>
+              </div>
+            </div>
+            <div class="col s4">
+              <h4 class="header">Microsoft Azure</h4>
+              <div class="card mssql hoverable">
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">SQL Server on virtual Machines<i class="material-icons right">more_vert</i></span>
+                  <h6><b>Offering</b></h6>
+                  sql server running on virtual machines
+                  <h6><b>Features</b></h6>
+                  <li>up to a maximum of 64 vCPUs and 448 GiB of RAM</li>
+                  <li>a maximum of 64 TB Volume, unlimited databases</li>
+                  <li></li>
+                  <b>Regions</b></h6>
+                  <li>all Azure Regions</li>
+                  <h6><b>Backup & Recovery</b></h6>
+                  <li>manual, backup, recovery, replication is up to you</li>
+                  <h6><b>Licensing / Editions</b></h6>
+                  <li>Windows and Linux (SQL Server 2016/17 for Linux)</li>
+                  <li>SQL Server Express (2012, 2014, 2016)</li>
+                  <li>SQL Server Developer (2016)</li>
+                  <li>SQL Server Standard (2012, 2014, 2016)</li>
+                  <li>SQL Server Web (2012, 2014, 2016)</li>
+                  <li>SQL Server Enterprise (2012, 2014, 2016)</li>
+                  <li>SQL Server Enterprise (2012, 2014, 2016)</li>
+                  <li>Compute Engine VMs are available preloaded with Microsoft SQL Server</li>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">SQL Server on virtual Machines - Overview<i class="material-icons right">close</i></span>
+                  <p>SQL Database is a cloud database service built for application developers that lets you scale on-the-fly
+                    without downtime and efficiently deliver your applications. Built-in advisors quickly learn your application's
+                    unique characteristics and dynamically adapt to maximize performance, reliability, and data protection.</p>
+                  <img src="https://azurecomcdn.azureedge.net/cvt-436dfecd75d9360bd582e3dc5e37e7c55c947b1d0fd71405ff126484b77db4af/images/page/services/virtual-machines/sql-server/sql-server-seamless.png">
+                  <p><a href="https://azure.microsoft.com/en-us/services/virtual-machines/sql-server/">Jump in..</a></p>
+                </div>
+                <div class="card-action">
+                  <a class="blue-grey-text" href="https://aws.amazon.com/windows/products/sql/">Lern more</a>
+                  <a class="blue-grey-text" href="">Features</a>
+                  <a class="blue-grey-text" href="https://aws.amazon.com/ec2/pricing/">Pricing</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s4">
+              <h4 class="header">Google Cloud Platform</h4>
+              <div class="card mssql hoverable">
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">SQL Server<i class="material-icons right">more_vert</i></span>
+                  <h6><b>Offering</b></h6>
+                  Flexible, scalable, and high-performance SQL Server virtual machines
+                  <h6><b>Features</b></h6>
+                  <li>up to a maximum of 64 vCPUs and 416 GiB of RAM (custom VM´s possible)</li>
+
+                  <b>Regions</b></h6>
+                  <li>all GCP Regions</li>
+                  <h6><b>Backup & Recovery</b></h6>
+                  <li>manual, backup, recovery, replication is up to you</li>
+                  <h6><b>Licensing / Editions</b></h6>
+                  <li>Windows only per default</li>
+                  <li>SQL Server Standard (2012, 2014, 2016)</li>
+                  <li>SQL Server Web (2012, 2014, 2016)</li>
+                  <li>SQL Server Enterprise (2012, 2014, 2016)</li>
+                  <li>Compute Engine VMs are available preloaded with Microsoft SQL Server</li>
+                  <li>BYOL possible</li>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">SQL Server - Overview<i class="material-icons right">close</i></span>
+                  <p>Our top enterprise customers are often surprised to learn that Google’s underlying infrastructure makes
+                    it a great place to run existing enterprise workloads. Windows is no exception: learn why SQL Server
+                    images powered by Google Compute Engine gives enterprises the continuity needed now as they gear up to
+                    build what’s next.</p>
+                  <img src="https://cloud.google.com/images/sql-server/lead-graphic.png"></img>
+                  <p><a href="https://cloud.google.com/sql-server/">Jump in..</a></p>
+                </div>
+                <div class="card-action">
+                  <a class="blue-grey-text" href="https://aws.amazon.com/windows/products/sql/">Lern more</a>
+                  <a class="blue-grey-text" href="">Features</a>
+                  <a class="blue-grey-text" href="https://aws.amazon.com/ec2/pricing/">Pricing</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer blue-grey">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">soner.io</h5>
+          <p class="grey-text text-lighten-4">
+            why: because we love this shit<br> made with: Google Cloud Services, materializecss, jquery, github<br> sources:
+            aws.amazon.com, cloud.google.com, azure.com
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <ul>
+            <li><a class="twitter-follow-button" href="https://twitter.com/mfrank0711" data-size="large">Follow @mfrank0711</a></li>
+            <li><a class="twitter-follow-button" href="https://twitter.com/mfrank0711" data-size="large">Follow @soner</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 - today
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
